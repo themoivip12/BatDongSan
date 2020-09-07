@@ -51,14 +51,24 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center my-3 my-lg-0">
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="tiente">
-              <option>USD</option>
-              <option>VND</option>
-            </select>
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="ngonngu">
-              <option>ENGLISH</option>
-              <option>VIETNAMESE</option>
-            </select>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                USD
+              </button>
+              <div class="dropdown-menu min-w-auto" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item h6 text-sm" href="#">USD</a>
+                <a class="dropdown-item h6 text-sm" href="#">VND</a>
+              </div>
+            </div>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ENGLISH
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                <a class="dropdown-item h6" href="#">ENGLISH</a>
+                <a class="dropdown-item h6" href="#">VIETNAMESE</a>
+              </div>
+            </div>
             <button class="btn btn-link py-0 text-dark" data-toggle="modal" data-target="#search"><i class="font-weight-light fas fa-search"></i></button>
           </div>
         </div>
@@ -249,46 +259,10 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content p-6 bg-light-opacity-7">
         <div class="modal-body">
-          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm bất động sản</h5>
+          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm</h5>
           <div class="form-row mb-md-4">
             <div class="form-group col-md-12 px-md-4">
               <input type="text" class="form-control b-select" id="key-word" placeholder="Từ khóa tìm kiếm ...">
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="tinhthanh">
-                <option class="py-4">Chọn tỉnh / thành</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn quận / huyện</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Loại bất động sản</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn hướng nhà</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá thấp nhát</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá cao nhất</option>
-              </select>
             </div>
           </div>
           <div class="d-block text-right">

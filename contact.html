@@ -51,14 +51,24 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center my-3 my-lg-0">
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="tiente">
-              <option>USD</option>
-              <option>VND</option>
-            </select>
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="ngonngu">
-              <option>ENGLISH</option>
-              <option>VIETNAMESE</option>
-            </select>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                USD
+              </button>
+              <div class="dropdown-menu min-w-auto" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item h6 text-sm" href="#">USD</a>
+                <a class="dropdown-item h6 text-sm" href="#">VND</a>
+              </div>
+            </div>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ENGLISH
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                <a class="dropdown-item h6" href="#">ENGLISH</a>
+                <a class="dropdown-item h6" href="#">VIETNAMESE</a>
+              </div>
+            </div>
             <button class="btn btn-link py-0 text-dark" data-toggle="modal" data-target="#search"><i class="font-weight-light fas fa-search"></i></button>
           </div>
         </div>
@@ -76,48 +86,48 @@
     </div>   
   </div>
   <div class="container py-6 py-lg-9">
-      <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-10">
-              <h1 class="text-center mb-0">Contact Us To Find Out More Or How
-                We Can Help You Better.</h1>
-          </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-10">
+        <h1 class="text-center mb-0">Contact Us To Find Out More Or How
+        We Can Help You Better.</h1>
       </div>
+    </div>
   </div>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14897.047134379984!2d105.8172995!3d21.0222089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1597419420083!5m2!1svi!2s" class="w-100" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   <div class="container py-lg-9 py-6">
-      <div class="row">
-          <div class="col-md-4">
-              <h2>Add ESTATE</h2>
-              <p class="text-muted h6 mb-lg-6 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                P: 090.000.0000  F:024.000.0000</p>
-                <h4>Store Hours</h4>
-                <span class="text-muted h6">
-                    Monday-Saturday 11am-7pm ET
-                </span>
-                <p class="text-muted h6 mb-lg-6 mb-4">Sunday 11am-6pm ET</p>
-                <h4>Specialist Hours</h4>
-              <p class="text-muted h6 mb-lg-6 mb-4">Monday-Friday 9am-5pm ET</p>
-          </div>
-          <div class="col-md-6 ml-auto">
-              <form>
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" required placeholder="Your Name (Required)">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" required placeholder="Your Email (Required)">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" placeholder="Subject">
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control form-control-lg" placeholder="Your Message" rows="6"></textarea>
-                  </div>
-                  <div class="form-group text-right">
-                    <button type="submit" class="btn btn-danger btn-lg rounded-sm">SEND TO US</button>
-                  </div>
-              </form>
-          </div>
+    <div class="row">
+      <div class="col-md-6 col-xl-4">
+        <h2>Add ESTATE</h2>
+        <p class="text-muted h6 mb-lg-6 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        P: 090.000.0000  F:024.000.0000</p>
+        <h4>Store Hours</h4>
+        <span class="text-muted h6">
+          Monday-Saturday 11am-7pm ET
+        </span>
+        <p class="text-muted h6 mb-lg-6 mb-4">Sunday 11am-6pm ET</p>
+        <h4>Specialist Hours</h4>
+        <p class="text-muted h6 mb-lg-6 mb-4">Monday-Friday 9am-5pm ET</p>
       </div>
+      <div class="col-md-6 ml-auto">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" required placeholder="Your Name (Required)">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" required placeholder="Your Email (Required)">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control-lg" placeholder="Your Message" rows="6"></textarea>
+          </div>
+          <div class="form-group text-right">
+            <button type="submit" class="btn btn-danger btn-lg rounded-sm">SEND TO US</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <div class="footer py-lg-9 py-7 text-white">
     <div class="container">
@@ -206,46 +216,10 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content p-6 bg-light-opacity-7">
         <div class="modal-body">
-          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm bất động sản</h5>
+          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm</h5>
           <div class="form-row mb-md-4">
             <div class="form-group col-md-12 px-md-4">
               <input type="text" class="form-control b-select" id="key-word" placeholder="Từ khóa tìm kiếm ...">
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="tinhthanh">
-                <option class="py-4">Chọn tỉnh / thành</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn quận / huyện</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Loại bất động sản</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn hướng nhà</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá thấp nhát</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá cao nhất</option>
-              </select>
             </div>
           </div>
           <div class="d-block text-right">

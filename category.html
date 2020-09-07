@@ -51,14 +51,24 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center my-3 my-lg-0">
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="tiente">
-              <option>USD</option>
-              <option>VND</option>
-            </select>
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="ngonngu">
-              <option>ENGLISH</option>
-              <option>VIETNAMESE</option>
-            </select>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                USD
+              </button>
+              <div class="dropdown-menu min-w-auto" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item h6 text-sm" href="#">USD</a>
+                <a class="dropdown-item h6 text-sm" href="#">VND</a>
+              </div>
+            </div>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ENGLISH
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                <a class="dropdown-item h6" href="#">ENGLISH</a>
+                <a class="dropdown-item h6" href="#">VIETNAMESE</a>
+              </div>
+            </div>
             <button class="btn btn-link py-0 text-dark" data-toggle="modal" data-target="#search"><i class="font-weight-light fas fa-search"></i></button>
           </div>
         </div>
@@ -78,195 +88,213 @@
   <div class="py-lg-9 py-7">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mb-9 mb-lg-0">
-            <div class="row">            
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-1.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
+        <div class="col-xl-8 mb-9 mb-lg-0">
+          <div class="row">            
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-1.png" alt="" class="w-100">
                 </div>
-              </div>
-              
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-2.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-3.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-4.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-5.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-6.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-7.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-7">
-                <div class="deploying-plan card h-100">
-                  <div class="overflow-hidden">
-                    <img src="./img/category-8.png" alt="" class="w-100">
-                  </div>
-                  <div class="p-5 card-body">
-                    <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
-                    <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
-                    <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
-                    <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
-                  </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
                 </div>
               </div>
             </div>
-            <nav aria-label="Page navigation">
-              <ul class="pagination pagination-lg justify-content-center mt-lg-9 mt-6">
-                <li>
-                  <a class="page-link h5 border-dark text-dark" href="#" aria-label="Previous">
-                    <i class="fas fa-angle-left"></i>
-                  </a>
-                </li>
-                <li><a class="page-link h5 border-dark text-dark" href="#">1</a></li>
-                <li><a class="page-link h5 border-dark text-dark" href="#">2</a></li>
-                <li>
-                  <a class="page-link h5 border-dark text-dark" href="#" aria-label="Next">
-                    <i class="fas fa-angle-right"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-2.png" alt="" class="w-100">
+                </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-3.png" alt="" class="w-100">
+                </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-4.png" alt="" class="w-100">
+                </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-5.png" alt="" class="w-100">
+                </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-6.png" alt="" class="w-100">
+                </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-7.png" alt="" class="w-100">
+                </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-7">
+              <div class="deploying-plan card h-100">
+                <div class="overflow-hidden">
+                  <img src="./img/category-8.png" alt="" class="w-100">
+                </div>
+                <div class="p-5 card-body">
+                  <a href="singleduan.html" title="" class="title-col text-navy font-weight-bold stretched-link">Ample Apartment At Last Floor</a>
+                  <p class="lead text-muted"><i class="fas fa-map-marker-alt mr-4 h6 my-auto"></i>Ha Noi,Viet Nam</p>
+                  <p class="h4 text-danger font-weight-bold mb-4">Từ 36tr/ m2 (VAT)</p>
+                  <p class="h6 text-black-50 font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination pagination-lg justify-content-center mt-lg-9 mt-6">
+              <li>
+                <a class="page-link h5 border-dark text-dark" href="#" aria-label="Previous">
+                  <i class="fas fa-angle-left"></i>
+                </a>
+              </li>
+              <li><a class="page-link h5 border-dark text-dark" href="#">1</a></li>
+              <li><a class="page-link h5 border-dark text-dark" href="#">2</a></li>
+              <li>
+                <a class="page-link h5 border-dark text-dark" href="#" aria-label="Next">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="col-lg-4">
+        <div class="col-xl-4">
           <div>
             <div>
               <h3 class="bg-navy text-uppercase mb-4 text-white text-center font-weight-normal py-2">danh mục tin tức</h3>
               <div class="row mb-4">
-                <div class="col-12">
-                    <div class="d-flex py-3 border-bottom news-horizontal">
-                        <img src="./img/img-item-4.png" alt="">
-                        <div class="ml-2">
-                          <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
-                          <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
-                          <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-                        </div>
+                <div class="col-12 col-lg-6 col-xl-12">
+                  <div class="row no-gutters py-3 news-horizontal border-bottom">
+                    <div class="col-auto">
+                      <img src="./img/img-item-3.png" alt="">
+                    </div> 
+                    
+                    <div class="ml-2 col">
+                      <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
+                      <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
+                      <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
                     </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                    <div class="d-flex py-3 border-bottom news-horizontal">
-                        <img src="./img/img-item-3.png" alt="">
-                        <div class="ml-2">
-                          <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
-                          <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
-                          <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-                        </div>
+                <div class="col-12 col-lg-6 col-xl-12">
+                  <div class="row no-gutters py-3 news-horizontal border-bottom">
+                    <div class="col-auto">
+                      <img src="./img/img-item-1.png" alt="">
+                    </div> 
+                    
+                    <div class="ml-2 col">
+                      <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
+                      <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
+                      <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
                     </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                    <div class="d-flex py-3 border-bottom news-horizontal">
-                        <img src="./img/img-item-2.png" alt="">
-                        <div class="ml-2">
-                          <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
-                          <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
-                          <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-                        </div>
+                <div class="col-12 col-lg-6 col-xl-12">
+                  <div class="row no-gutters py-3 news-horizontal border-bottom">
+                    <div class="col-auto">
+                      <img src="./img/img-item-2.png" alt="">
+                    </div> 
+                    
+                    <div class="ml-2 col">
+                      <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
+                      <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
+                      <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
                     </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                    <div class="d-flex py-3 border-bottom news-horizontal">
-                        <img src="./img/img-item-1.png" alt="">
-                        <div class="ml-2">
-                          <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
-                          <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
-                          <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-                        </div>
+                <div class="col-12 col-lg-6 col-xl-12">
+                  <div class="row no-gutters py-3 news-horizontal border-bottom">
+                    <div class="col-auto">
+                      <img src="./img/img-item-4.png" alt="">
+                    </div> 
+                    
+                    <div class="ml-2 col">
+                      <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
+                      <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
+                      <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
                     </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                    <div class="d-flex py-3 border-bottom news-horizontal">
-                        <img src="./img/img-item-2.png" alt="">
-                        <div class="ml-2">
-                          <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
-                          <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
-                          <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-                        </div>
+                <div class="col-12 col-lg-6 col-xl-12">
+                  <div class="row no-gutters py-3 news-horizontal border-bottom">
+                    <div class="col-auto">
+                      <img src="./img/img-item-1.png" alt="">
+                    </div> 
+                    
+                    <div class="ml-2 col">
+                      <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
+                      <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
+                      <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
                     </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                    <div class="d-flex py-3 border-bottom news-horizontal">
-                        <img src="./img/img-item-4.png" alt="">
-                        <div class="ml-2">
-                          <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
-                          <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
-                          <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-                        </div>
+                <div class="col-12 col-lg-6 col-xl-12">
+                  <div class="row no-gutters py-3 news-horizontal border-bottom">
+                    <div class="col-auto">
+                      <img src="./img/img-item-2.png" alt="">
+                    </div> 
+                    
+                    <div class="ml-2 col">
+                      <a href="./singleduan.html" title="" class="stretched-link mb-3 h6 less-letter-spacing-lg text-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
+                      <p class="h5 font-weight-bold text-danger pt-2">GIÁ 999 TRIỆU</p>
+                      <span class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -462,46 +490,10 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content p-6 bg-light-opacity-7">
         <div class="modal-body">
-          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm bất động sản</h5>
+          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm</h5>
           <div class="form-row mb-md-4">
             <div class="form-group col-md-12 px-md-4">
               <input type="text" class="form-control b-select" id="key-word" placeholder="Từ khóa tìm kiếm ...">
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="tinhthanh">
-                <option class="py-4">Chọn tỉnh / thành</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn quận / huyện</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Loại bất động sản</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn hướng nhà</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá thấp nhát</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá cao nhất</option>
-              </select>
             </div>
           </div>
           <div class="d-block text-right">

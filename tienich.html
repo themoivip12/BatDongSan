@@ -51,14 +51,24 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center my-3 my-lg-0">
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="tiente">
-              <option>USD</option>
-              <option>VND</option>
-            </select>
-            <select class="px-1 py-2 text-dark bg-transparent small mx-2" id="ngonngu">
-              <option>ENGLISH</option>
-              <option>VIETNAMESE</option>
-            </select>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                USD
+              </button>
+              <div class="dropdown-menu min-w-auto" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item h6 text-sm" href="#">USD</a>
+                <a class="dropdown-item h6 text-sm" href="#">VND</a>
+              </div>
+            </div>
+            <div class="dropdown ml-3">
+              <button class="btn rounded-0 text-dark text-sm border-dark bg-transparent dropdown-toggle" type="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ENGLISH
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                <a class="dropdown-item h6" href="#">ENGLISH</a>
+                <a class="dropdown-item h6" href="#">VIETNAMESE</a>
+              </div>
+            </div>
             <button class="btn btn-link py-0 text-dark" data-toggle="modal" data-target="#search"><i class="font-weight-light fas fa-search"></i></button>
           </div>
         </div>
@@ -76,179 +86,179 @@
     </div>   
   </div>
   <div class="container py-lg-9 py-6">
-      <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <nav>
-                <div class="nav" id="nav-tab" role="tablist">
-                  <a class="nav-link h4 btn btn-tab bg-navy text-uppercase mb-4 text-white text-center font-weight-normal py-2 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home <i class="fas fa-sort-down"></i></a>
-                  <a class="nav-link h4 btn btn-tab bg-navy text-uppercase mb-4 text-white text-center font-weight-normal mx-auto py-2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile <i class="fas fa-sort-down"></i></a>
-                  <a class="nav-link h4 btn btn-tab bg-navy text-uppercase mb-4 text-white text-center font-weight-normal py-2" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact <i class="fas fa-sort-down"></i></a>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <nav>
+          <div class="nav" id="nav-tab" role="tablist">
+            <a class="nav-link h4 btn btn-tab bg-navy text-uppercase mb-4 text-white text-center font-weight-normal py-2 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home <i class="fas fa-sort-down"></i></a>
+            <a class="nav-link h4 btn btn-tab bg-navy text-uppercase mb-4 text-white text-center font-weight-normal mx-auto py-2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile <i class="fas fa-sort-down"></i></a>
+            <a class="nav-link h4 btn btn-tab bg-navy text-uppercase mb-4 text-white text-center font-weight-normal py-2" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact <i class="fas fa-sort-down"></i></a>
+          </div>
+        </nav>
+        <div class="tab-content mt-6 p-6" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h3 class="h4 text-uppercase mb-4 text-dark font-weight-bold">TÍNH LÃI NGÂN HÀNG</h3>
+            <div class="card mt-6">
+              <div class="card-body">
+                <div>
+                  <h5 class="title-col text-muted mb-4">Giá trị tài sản</h5>
+                  <div class="d-flex no-gutters justify-content-between mb-4 border-bottom">
+                    <div class="col">
+                      <input type="number" class="form-select border-0 h4 text-navy" placeholder="Nhập giá trị tài sản">
+                    </div>
+                    <div class="col-auto">
+                      <span class="h4 text-navy py-1">VND</span>
+                    </div>
+                  </div>
                 </div>
-              </nav>
-              <div class="tab-content mt-6 p-6" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <h3 class="h4 text-uppercase mb-4 text-dark font-weight-bold">TÍNH LÃI NGÂN HÀNG</h3>
-                    <div class="card mt-6">
-                        <div class="card-body">
-                            <div>
-                              <h5 class="title-col text-muted mb-4">Giá trị tài sản</h5>
-                              <div class="d-flex no-gutters justify-content-between mb-4 border-bottom">
-                                  <div class="col">
-                                    <input type="number" class="form-select border-0 h4 text-navy" placeholder="Nhập giá trị tài sản">
-                                  </div>
-                                  <div class="col-auto">
-                                    <span class="h4 text-navy py-1">VND</span>
-                                  </div>
-                            </div>
-                            </div>
-                            <div>
-                            <h5 class="title-col text-muted mb-4">Lãi suất (%)</h5>
-                            <div class="d-flex justify-content-between mb-4 border-bottom">
-                                <input type="number" class="form-select border-0 h4 text-navy" placeholder="Nhập lãi suất">
+                <div>
+                  <h5 class="title-col text-muted mb-4">Lãi suất (%)</h5>
+                  <div class="d-flex justify-content-between mb-4 border-bottom">
+                    <input type="number" class="form-select border-0 h4 text-navy" placeholder="Nhập lãi suất">
 
-                            </div>
-                            </div>
-                            <div>
-                            <h5 class="title-col text-muted mb-4">Thanh Toán trước (%)</h5>
-                            <div class="d-flex justify-content-between mb-4 border-bottom">
-                                <input type="number" class="form-select border-0 h4 text-navy" placeholder="Nhập số % đã thanh toán">
-                            </div>
-                            </div>
-                            <div>
-                            <h5 class="title-col text-muted mb-4">Thời hạn vay</h5>
-                            <div class="d-flex checkbox mb-4">
-                                <label for="customCheckbox1" class="checkbox-label mb-0">
-                                <input type="radio" class="checkbox-input" id="customCheckbox1" name="Radios" value="option1" hidden checked/>
-                                <span class="checkbox-checked year h4 text-navy d-inline-flex mb-0"><div class="border mr-3 pl-1"><i class="fas fa-check font-weight-light"></i></div> Năm</span>
-                                </label>
-                            
-                                <label for="customCheckbox2" class="checkbox-label mb-0 ml-5">
-                                <input type="radio" class="checkbox-input" id="customCheckbox2" name="Radios" value="option2" hidden/>
-                                <span class="checkbox-checked month h4 text-navy d-inline-flex mb-0"><div class="border mr-3 pl-1"><i class="fas fa-check font-weight-light"></i></div> Tháng</span>
-                                </label>
-                            </div>
-                            <div class="form-group border-bottom">
-                                <input type="text" class="form-select border-0 h4 text-navy" id="formGroupExampleInput" placeholder="Nhập số năm(tháng)">
-                            </div>
-                            </div>
-                            <div class="d-flex mt-6">
-                            <button class="btn btn-danger px-6 text-uppercase h3 btn-lg">tính lãi</button>
-                            <button class="btn btn-white text-navy px-6 text-uppercase btn-lg h3 mt-0">reset</button>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <h3 class="text-uppercase mb-4 h4 font-weight-bold">xem hướng nhà</h3>
-                        <div class="card mt-6">
-                            <div class="card-body">
-                                <div>
-                                <h5 class="title-col text-muted mb-4">Năm sinh</h5>
-                                <div class="mb-4">
-                                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
-                                    <option>2020</option>
-                                    <option>1991</option>
-                                    <option>1992</option>
-                                    <option>1993</option>
-                                    <option>1994</option>
-                                    <option>1995</option>
-                                    <option>1996</option>
-                                    <option>1997</option>
-                                    <option>1998</option>
-                                    <option>1999</option>
-                                    <option>2000</option>
-                                    </select>
-                                </div>
-                                </div>
-                                <div>
-                                <h5 class="title-col text-muted mb-4">Giới tính</h5>
-                                <div class="mb-4">
-                                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
-                                    <option>Nam</option>
-                                    <option>Nữ</option>
-                                    </select>
-                                </div>
-                                </div>
-                                <div>
-                                <h5 class="title-col text-muted mb-4">Hướng nhà</h5>
-                                <div class="mb-4">
-                                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
-                                    <option>Đông</option>
-                                    <option>Đông Bắc</option>
-                                    <option>Đông Nam</option>
-                                    <option>Tây</option>
-                                    <option>Tây Nam</option>
-                                    <option>Tây Bắc</option>
-                                    <option>Nam</option>
-                                    <option>Bắc</option>
-                                    
-                                    </select>
-                                </div>
-                                </div>
-                                <div class="mt-5">
-                                <a href="#" class="btn btn-danger btn-lg">XEM NGAY</a>
-                                </div>
-                            </div>
-                        </div>
+                <div>
+                  <h5 class="title-col text-muted mb-4">Thanh Toán trước (%)</h5>
+                  <div class="d-flex justify-content-between mb-4 border-bottom">
+                    <input type="number" class="form-select border-0 h4 text-navy" placeholder="Nhập số % đã thanh toán">
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <h3 class="text-uppercase mb-4 h4 font-weight-bold">tuổi xây dựng</h3>
-                    <div class="card my-6">
-                    <div class="card-body">
-                        <div>
-                        <h5 class="title-col text-muted mb-4">Năm sinh</h5>
-                        <div class="mb-4">
-                            <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
-                            <option>1990</option>
-                            <option>1991</option>
-                            <option>1992</option>
-                            <option>1993</option>
-                            <option>1994</option>
-                            <option>1995</option>
-                            <option>1996</option>
-                            <option>1997</option>
-                            <option>1998</option>
-                            <option>1999</option>
-                            <option>2000</option>
-                            </select>
-                        </div>
-                        </div>
-                        <div>
-                            <h5 class="title-col text-muted mb-4">Giới tính</h5>
-                            <div class="mb-4">
-                                <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
-                                <option>Nam</option>
-                                <option>Nữ</option>
-                                </select>
-                            </div>
-                            </div>
-                        <div>
-                        <h5 class="title-col text-muted mb-4">tuổi xây dựng</h5>
-                        <div class="mb-4">
-                            <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
-                            <option>2020</option>
-                            <option>2021</option>
-                            <option>2022</option>
-                            <option>2023</option>
-                            <option>2024</option>
-                            <option>2025</option>
-                            <option>2026</option>
-                            <option>2027</option>
-                            <option>2028</option>
-                            <option>2029</option>
-                            <option>2000</option>
-                            </select>
-                        </div>
-                        </div>
-                        <div class="mt-5">
-                        <a href="#" class="btn btn-danger btn-lg">XEM NGAY</a>
-                        </div>
-                    </div>
-                    </div>
+                <div>
+                  <h5 class="title-col text-muted mb-4">Thời hạn vay</h5>
+                  <div class="d-flex checkbox mb-4">
+                    <label for="customCheckbox1" class="checkbox-label mb-0">
+                      <input type="radio" class="checkbox-input" id="customCheckbox1" name="Radios" value="option1" hidden checked/>
+                      <span class="checkbox-checked year h4 text-navy d-inline-flex mb-0"><div class="border mr-3 pl-1"><i class="fas fa-check font-weight-light"></i></div> Năm</span>
+                    </label>
+                    
+                    <label for="customCheckbox2" class="checkbox-label mb-0 ml-5">
+                      <input type="radio" class="checkbox-input" id="customCheckbox2" name="Radios" value="option2" hidden/>
+                      <span class="checkbox-checked month h4 text-navy d-inline-flex mb-0"><div class="border mr-3 pl-1"><i class="fas fa-check font-weight-light"></i></div> Tháng</span>
+                    </label>
+                  </div>
+                  <div class="form-group border-bottom">
+                    <input type="text" class="form-select border-0 h4 text-navy" id="formGroupExampleInput" placeholder="Nhập số năm(tháng)">
+                  </div>
+                </div>
+                <div class="d-flex mt-6">
+                  <button class="btn btn-danger px-6 text-uppercase h3 btn-lg">tính lãi</button>
+                  <button class="btn btn-white text-navy px-6 text-uppercase btn-lg h3 mt-0">reset</button>
                 </div>
               </div>
+            </div>
           </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <h3 class="text-uppercase mb-4 h4 font-weight-bold">xem hướng nhà</h3>
+            <div class="card mt-6">
+              <div class="card-body">
+                <div>
+                  <h5 class="title-col text-muted mb-4">Năm sinh</h5>
+                  <div class="mb-4">
+                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
+                      <option>2020</option>
+                      <option>1991</option>
+                      <option>1992</option>
+                      <option>1993</option>
+                      <option>1994</option>
+                      <option>1995</option>
+                      <option>1996</option>
+                      <option>1997</option>
+                      <option>1998</option>
+                      <option>1999</option>
+                      <option>2000</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="title-col text-muted mb-4">Giới tính</h5>
+                  <div class="mb-4">
+                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
+                      <option>Nam</option>
+                      <option>Nữ</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="title-col text-muted mb-4">Hướng nhà</h5>
+                  <div class="mb-4">
+                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
+                      <option>Đông</option>
+                      <option>Đông Bắc</option>
+                      <option>Đông Nam</option>
+                      <option>Tây</option>
+                      <option>Tây Nam</option>
+                      <option>Tây Bắc</option>
+                      <option>Nam</option>
+                      <option>Bắc</option>
+                      
+                    </select>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <a href="#" class="btn btn-danger btn-lg">XEM NGAY</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h3 class="text-uppercase mb-4 h4 font-weight-bold">tuổi xây dựng</h3>
+            <div class="card my-6">
+              <div class="card-body">
+                <div>
+                  <h5 class="title-col text-muted mb-4">Năm sinh</h5>
+                  <div class="mb-4">
+                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
+                      <option>1990</option>
+                      <option>1991</option>
+                      <option>1992</option>
+                      <option>1993</option>
+                      <option>1994</option>
+                      <option>1995</option>
+                      <option>1996</option>
+                      <option>1997</option>
+                      <option>1998</option>
+                      <option>1999</option>
+                      <option>2000</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="title-col text-muted mb-4">Giới tính</h5>
+                  <div class="mb-4">
+                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
+                      <option>Nam</option>
+                      <option>Nữ</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="title-col text-muted mb-4">tuổi xây dựng</h5>
+                  <div class="mb-4">
+                    <select class="form-select h4 text-navy" id="exampleFormControlSelect1">
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2000</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <a href="#" class="btn btn-danger btn-lg">XEM NGAY</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
   <div class="footer py-lg-9 py-7 text-white">
     <div class="container">
@@ -337,46 +347,10 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content p-6 bg-light-opacity-7">
         <div class="modal-body">
-          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm bất động sản</h5>
+          <h5 class="text-center text-uppercase font-weight-bold mb-5">tìm kiếm</h5>
           <div class="form-row mb-md-4">
             <div class="form-group col-md-12 px-md-4">
               <input type="text" class="form-control b-select" id="key-word" placeholder="Từ khóa tìm kiếm ...">
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="tinhthanh">
-                <option class="py-4">Chọn tỉnh / thành</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn quận / huyện</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Loại bất động sản</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Chọn hướng nhà</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row mb-md-4">
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá thấp nhát</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 px-md-4 select-wrap">
-              <select class="form-control b-select" id="quanhuyen">
-                <option class="py-4">Giá cao nhất</option>
-              </select>
             </div>
           </div>
           <div class="d-block text-right">
